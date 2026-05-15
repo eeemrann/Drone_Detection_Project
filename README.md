@@ -1,7 +1,7 @@
-
 # Drone Human Detection & Counting System
 
 ## Overview
+
 This project was developed for the Antlings AI/ML Technical Assessment.
 
 The system detects:
@@ -11,35 +11,38 @@ The system detects:
 from drone/aerial imagery using YOLOv8.
 
 It also:
-- counts total humans
-- visualizes detections
-- displays confidence scores
-- saves processed outputs
+- Counts total humans
+- Visualizes detections
+- Displays confidence scores
+- Saves processed outputs
 
 ---
 
-## Model Used
+# Model Used
+
 - YOLOv8 Nano (YOLOv8n)
 
 ---
 
-## Dataset
-VisDrone Dataset:
+# Dataset
+
+VisDrone Dataset:  
 https://www.kaggle.com/datasets/banuprasadb/visdrone-dataset
 
 ---
 
-## Features
-✅ Human Detection
-✅ Car Detection
-✅ Human Counting
-✅ Bounding Box Visualization
-✅ Confidence Score Display
-✅ Processed Output Saving
+# Features
+
+-> Human Detection  
+-> Car Detection  
+-> Human Counting  
+-> Bounding Box Visualization  
+-> Confidence Score Display  
+-> Processed Output Saving  
 
 ---
 
-## Training Details
+# Training Details
 
 - Epochs: 20
 - Image Size: 640
@@ -48,16 +51,17 @@ https://www.kaggle.com/datasets/banuprasadb/visdrone-dataset
 
 ---
 
-## Results
+# Results
 
-### Validation Metrics
+## Validation Metrics
+
 - mAP50: ~0.51
 - Human Detection mAP50: ~0.30
 - Car Detection mAP50: ~0.71
 
 ---
 
-## Challenges Faced
+# Challenges Faced
 
 - Small object detection
 - Dense crowd regions
@@ -67,26 +71,72 @@ https://www.kaggle.com/datasets/banuprasadb/visdrone-dataset
 
 ---
 
-## Run Inference
+# Run Inference
 
+```bash
 python detect_count.py \
     --model weights/best.pt \
     --image sample.jpg \
     --output result.jpg
+```
 
 ---
 
-## Project Structure
+# Project Structure
 
-Antlings_Drone_Detection_Project/
+```text
+Drone_Detection_Project/
 │
 ├── detect_count.py
 ├── README.md
 ├── weights/
+│   └── best.pt
+│
 ├── results/
+│   └── labels.jpg
+│
 ├── sample_outputs/
+│   ├── 0000001_03999_d_0000007.jpg
+│   ├── 0000021_00800_d_0000003.jpg
+│   └── ...
+```
 
 ---
 
-## Author
+# Training Visualization
+
+## Dataset Labels Distribution
+
+![Labels](results/labels.jpg)
+
+---
+
+# Sample Outputs
+
+## Output 1
+
+![Output1](sample_outputs/0000001_03999_d_0000007.jpg)
+
+---
+
+## Output 2
+
+![Output2](sample_outputs/0000021_00800_d_0000003.jpg)
+
+---
+
+## Output 3
+
+![Output3](sample_outputs/0000215_02319_d_0000261.jpg)
+
+---
+
+## Output 4
+
+![Output4](sample_outputs/0000242_01475_d_0000007.jpg)
+
+---
+
+# Author
+
 AI/ML Internship Assessment Submission
