@@ -2,8 +2,6 @@
 
 ## Overview
 
-This project was developed for the Antlings AI/ML Technical Assessment.
-
 The system detects:
 - Humans
 - Cars
