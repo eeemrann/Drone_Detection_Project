@@ -137,6 +137,4 @@ Drone_Detection_Project/
 
 ---
 
-# Author
 
-AI/ML Internship Assessment Submission
